@@ -1,0 +1,28 @@
+body{margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto asegura que el relleno y el borde estén incluidos en el tamaño total del elemento */
+
+background-color: #EBE2D6;
+color: #363633;
+
+}
+
+header{
+font-family: lato, sans-serif;
+
+}
+#get-to-know-me{
+    font-family: raleway, sans-serif;
+
+}
+
+strong{
+    font-weight: 600;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    color:#363633;
+    font-weight: 600;
+}
