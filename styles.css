@@ -1,28 +1,91 @@
-body{margin: 0;
+/*Body and header section*/
+body {
+    margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Esto asegura que el relleno y el borde estén incluidos en el tamaño total del elemento */
-
-background-color: #EBE2D6;
-color: #363633;
-
+    box-sizing: border-box; 
+    background-color: #EBE2D6;
+    color: #363633;
 }
 
-header{
-font-family: lato, sans-serif;
-
+header {
+    font-family: lato, sans-serif;
+    background-image: url('images/mountains.png');
+    background-size: cover; 
+    background-position: center;  
+    height: 50vh; 
+    position: relative;
+    display: flex; 
+    align-items: center;  /* Centrar verticalmente */
+    justify-content: center;  /* Centrar horizontalmente */
 }
-#get-to-know-me{
-    font-family: raleway, sans-serif;
 
+h1, h2 {
+    text-align: center;  /* Centrar texto horizontalmente */
+    position: absolute;  /* Posicionar absolutamente dentro del header */
+    left: 50%;           /* Centrar horizontalmente */
+    transform: translateX(-50%); /* Corregir centrado */
+    width: 100%;         /* Ocupar todo el ancho del header */
+    max-width: 90%;      /* Limitar el ancho máximo para mejor presentación */
+    z-index: 1;          /* Asegura que el texto está por encima del fondo */
 }
 
-strong{
-    font-weight: 600;
+h2 {
+    top: 10%;            /* Posición desde la parte superior del header */
+    font-size: 2em;
 }
 
-nav a{
+h1 {
+    top: 25%;            /* Posición desde la parte superior del header */
+    font-size: 2em;
+}
+
+
+/* Nav bar */
+nav {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 100px; 
+    width: 20%; /* Ancho de la barra de navegación */
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    padding-left: 2%; /* Separación de la barra de navegación del borde */
+}
+
+nav a, ul, li {
     text-decoration: none;
     font-family: lato, sans-serif;
-    color:#363633;
+    color: #363633;
     font-weight: 600;
+    list-style: none;
+    margin-bottom: 20px;
+    font-size: large;
+}
+
+/* Seccion get to know me */
+strong {
+    font-weight: 600;
+}
+
+#get-to-know-me {
+    display: flex;  /* Establece el contenedor como flexbox */
+    align-items: center;  /* Centra verticalmente los elementos */
+    gap: 20px;  /* Establece un espacio entre los elementos */
+    font-family: raleway, sans-serif;
+    font-size: large;
+}
+
+#get-to-know-me img {
+    flex: 1;  /* Permite que la imagen ocupe la mitad del espacio */
+    max-width: 100%;  /* Asegura que la imagen no se salga de su contenedor */
+    margin-left: 20px;
+}
+
+#get-to-know-me .text.content {
+    flex: 2;  /* Permite que el texto ocupe el doble de espacio que la imagen */
+}
+
+figcaption{
+ margin-left: 150px;
 }
