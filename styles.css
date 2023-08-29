@@ -11,7 +11,7 @@ header {
     font-family: lato, sans-serif;
     background-image: url('images/mountains.png');
     background-size: cover; 
-    background-position: center;  
+    background-position: center center;  
     height: 50vh; 
     position: relative;
     display: flex; 
@@ -87,5 +87,55 @@ strong {
 }
 
 figcaption{
- margin-left: 150px;
+ margin-left: 160px;
+}
+
+/*Responsive header y nav bar para tablets*/
+@media (max-width: 768px) {
+    h1, h2 {
+        font-size: 1.5em;  /* Reducir el tamaño de las fuentes */
+    }
+    nav {
+        width: 100%;  /* Ocupar todo el ancho de la pantalla */
+        padding-left: 0;
+        flex-direction: row;  /* Cambiar la dirección para que los elementos estén en línea */
+        justify-content: space-around;  /* Distribuir equitativamente los elementos en la línea */
+    }
+    
+}
+/* Estilos para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    h1, h2 {
+        font-size: 1.2em;  /* Reducir aún más el tamaño de las fuentes */
+    }
+
+    
+
+    #get-to-know-me img {
+        margin-left: 0;  /* Eliminar el margen izquierdo */
+        width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
+        
+    }
+
+    #get-to-know-me .text.content {
+        text-align: center;  /* Centrar el texto */
+    }
+}
+
+@media (max-width: 820px) {
+    #get-to-know-me {
+        flex-direction: column;  /* Cambiar la dirección para que los elementos se apilen verticalmente */
+    }
+
+    #get-to-know-me img {
+        margin-left: 0;  /* Eliminar el margen izquierdo */
+        width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
+    }
+
+    #get-to-know-me .text.content {
+        text-align: center;  /* Centrar el texto */
+    }
+    header {
+        height: 30vh; /* Reduce la altura en dispositivos más pequeños */
+    }
 }
