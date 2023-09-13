@@ -40,16 +40,12 @@ h1 {
     left: 50%;
     top: 25%;            /* Posición desde la parte superior del header */
     transform: translateX(-50%);
-    
     font-size: 2em;
 
 }
 
 
 /* Nav bar */
-
-
-
 
 nav {
     position: absolute; 
@@ -84,6 +80,7 @@ strong {
     gap: 20px;  /* Establece un espacio entre los elementos */
     font-family: raleway, sans-serif;
     font-size: large;
+    font-weight: 400;/*Recuerda que html se especifica lo grueso*/
     line-height: 1.5;
 }
 
@@ -104,7 +101,10 @@ figure {
 figcaption{
     font-style: italic;
 }
-/*Diferrents tablets more large*/
+
+
+/* Responsive design
+Diferrents tablets more large*/
 @media (max-width: 820px) {
     
     header {
@@ -142,6 +142,7 @@ figcaption{
     
    figcaption{
     font-size: 60%;
+    padding: 5px;
    }
 
     #menuIcon {
