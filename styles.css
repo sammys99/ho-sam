@@ -82,12 +82,13 @@ strong {
     font-size: large;
     font-weight: 400;/*Recuerda que html se especifica lo grueso*/
     line-height: 1.5;
+    margin: 20px;
 }
 
 #get-to-know-me img {
     flex: 1;  /* Permite que la imagen ocupe la mitad del espacio */
     max-width: 100%;  /* Asegura que la imagen no se salga de su contenedor */
-    margin-left: 20px;
+    margin: 20px;
 }
 
 #get-to-know-me .text.content {
@@ -101,10 +102,91 @@ figure {
 figcaption{
     font-style: italic;
 }
+/*Section Tools and skills*/
+#tools-and-skills{
+    display: flex;  /* Establece el contenedor como flexbox */
+   /*  align-items: center;  Centra verticalmente los elementos */
+    gap: 20px;  /* Establece un espacio entre los elementos */
+   flex-direction: column;
+   margin-top: 10px;
+    font-family: raleway, sans-serif;
+    font-size: large;
+    font-weight: 400;/*Recuerda que html se especifica lo grueso*/
+    line-height: 1.5;
+    background-image: linear-gradient(to bottom, #EBE2D6 0%, #EBE2D6 5%, #779490 50%, #779490 100%);
+    
+    
+}
+.presentation-skills{
+    max-width: 50%;
+    transform: translateX(50%);
+}
+
+/*First div web developer/design icons*/
+ .web-categories{
+    display: flex;  /* Establece el contenedor como flexbox */
+    gap:20px;
+    padding: 20px;
+    margin: 20px;
+}
+.web-dev, .web-design{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    }
+
+.pino img{
+    width: 25rem;
+}
+.web-dev img, .web-design img{
+    width: 10.625rem;
+    transform: translateX(80%);
+}
+.web-dev.text, .web-design.text, .web-titles{
+text-align: center;
+    }
+/*Second div tools i use*/
+.tools{
+    display: flex;/*  Establece el contenedor como flexbox */
+    /*justify-content: space-between;*/
+     
+    margin:20px 70px;
+    
+}
+.tool-use{
+    width: 5rem;
+    flex:1;
+    text-align: center;
+}
+.tool-dev, .tool-des{
+    display: flex;
+    gap: 50px;
+}
+
+.tools img{
+    max-width: 6rem;
+}
+/*Soft and additional skills*/
+
+.skills{
+    display: flex;
+    margin: 0 200px;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.additional p, .soft p {
+     margin: 20px;
+    line-height: 2em;
+    
+}
 
 
-/* Responsive design
-Diferrents tablets more large*/
+
+
+/* Responsive design*/
+
+/*Diferrents tablets more large*/
 @media (max-width: 820px) {
     
     header {
