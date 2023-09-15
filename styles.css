@@ -18,6 +18,25 @@ header {
     align-items: center;  /* Centrar verticalmente */
     justify-content: center;  /* Centrar horizontalmente */
 }
+h1 {
+    color: #363633; 
+    animation-timing-function: ease-out; /* Suaviza el final de la animación */
+    animation: revealText 4s forwards; 
+}
+
+@keyframes revealText {
+    0% {
+       
+        opacity: 0;
+    }
+    100% {
+       
+        opacity: 1;
+    }
+}
+
+
+
 
 h1, h2 {
     text-align: center;  /* Centrar texto horizontalmente */
@@ -49,25 +68,41 @@ h1 {
 
 nav {
     position: absolute; 
-    top: 0; 
-    left: 0; 
-    bottom: 100px; 
-    width: 20%; /* Ancho de la barra de navegación */
-    display: flex;
-    flex-direction: column; 
-    justify-content: center; 
-    padding-left: 2%; /* Separación de la barra de navegación del borde */
+    top: 2rem; 
+    left: 2rem; 
+    /* bottom: 6.25rem;  */
+    /* width: 20%; Ancho de la barra de navegación */
+    /* display: flex; */
+    /* flex-direction: column;  */
+    /* justify-content: center;  */
+    /* padding-left: 2%; Separación de la barra de navegación del borde */
 }
 
-nav a, ul, li {
+
+nav ul {
+    list-style: none; /* No bullets para la lista */
+    padding: 0; /* Elimina el padding por defecto en la lista */
+    margin: 0; /* Elimina el margin por defecto en la lista */
+}
+
+nav li {
+    margin-bottom: 1.25rem;
+}
+
+nav a {
     text-decoration: none;
     font-family: lato, sans-serif;
     color: #363633;
     font-weight: 600;
-    list-style: none;
-    margin-bottom: 20px;
     font-size: large;
+    transition: color 0.1s ease;
+    display: block; /* Hace que el enlace ocupe todo el ancho disponible, por lo que no tendrías que colocar el cursor justo sobre el texto */
 }
+
+nav a:hover {
+    color: #79CBF0;
+}
+
 
 /* Seccion get to know me */
 strong {
@@ -77,18 +112,21 @@ strong {
 #get-to-know-me {
     display: flex;  /* Establece el contenedor como flexbox */
     align-items: center;  /* Centra verticalmente los elementos */
-    gap: 20px;  /* Establece un espacio entre los elementos */
+    gap: 1.25rem;  /* Establece un espacio entre los elementos */
     font-family: raleway, sans-serif;
     font-size: large;
     font-weight: 400;/*Recuerda que html se especifica lo grueso*/
     line-height: 1.5;
-    margin: 20px;
+    margin: 1.25rem;
 }
 
 #get-to-know-me img {
+    display: block;
     flex: 1;  /* Permite que la imagen ocupe la mitad del espacio */
     max-width: 100%;  /* Asegura que la imagen no se salga de su contenedor */
-    margin: 20px;
+    margin: 1.25rem;
+    filter:
+    drop-shadow(2.5rem 2.5rem 1.25rem #363633);
 }
 
 #get-to-know-me .text.content {
@@ -106,9 +144,9 @@ figcaption{
 #tools-and-skills{
     display: flex;  /* Establece el contenedor como flexbox */
    /*  align-items: center;  Centra verticalmente los elementos */
-    gap: 20px;  /* Establece un espacio entre los elementos */
+    gap: 1.25rem;  /* Establece un espacio entre los elementos */
    flex-direction: column;
-   margin-top: 10px;
+   margin-top: .625rem;
     font-family: raleway, sans-serif;
     font-size: large;
     font-weight: 400;/*Recuerda que html se especifica lo grueso*/
@@ -125,14 +163,14 @@ figcaption{
 /*First div web developer/design icons*/
  .web-categories{
     display: flex;  /* Establece el contenedor como flexbox */
-    gap:20px;
-    padding: 20px;
-    margin: 20px;
+    gap:1.25rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
 }
 .web-dev, .web-design{
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: .625rem;
     }
 
 .pino img{
@@ -142,6 +180,19 @@ figcaption{
     width: 10.625rem;
     transform: translateX(80%);
 }
+
+
+
+
+.web-dev img:hover {
+    filter: invert(23%) sepia(70%) saturate(3170%) hue-rotate(210deg) brightness(103%) contrast(90%);
+}
+
+.web-design img:hover{
+    filter: invert(48%) sepia(78%) saturate(3648%) hue-rotate(236deg) brightness(105%) contrast(94%);
+}
+
+
 .web-dev.text, .web-design.text, .web-titles{
 text-align: center;
     }
@@ -150,7 +201,7 @@ text-align: center;
     display: flex;/*  Establece el contenedor como flexbox */
     /*justify-content: space-between;*/
      
-    margin:20px 70px;
+    margin:1.25rem 4.375rem;
     
 }
 .tool-use{
@@ -170,13 +221,13 @@ text-align: center;
 
 .skills{
     display: flex;
-    margin: 0 200px;
-    padding: 20px;
+    margin: 0 12.5rem;
+    padding: 1.25rem;
     justify-content: space-between;
 }
 
 .additional p, .soft p {
-     margin: 20px;
+     margin: 1.25rem;
     line-height: 2em;
     
 }
