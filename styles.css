@@ -4,12 +4,12 @@ body {
     padding: 0;
     box-sizing: border-box; /*El ancho y la altura incluyen el contenido, el padding y el borde*/
     background-color: #EBE2D6;
-    color: #363633;
+    color: black;
 }
 
 header {
     font-family: lato, sans-serif;
-    background-image: url('images/mountains.png'); /*Se puede poner la imagen aqui en ves de en html*/
+    background-image: url('images/forest.svg'); /*Se puede poner la imagen aqui en ves de en html*/
     background-size: cover; /*Que cubra el background en este caso la imagen cubriendo el color*/
     background-position: center center;  /*Al momento de que se hace responsivo siempre queda centrado*/
     height: 50vh; /*Por ejemplo, si estás creando un diseño de "hero" que debe ocupar siempre el 100% de la altura de la ventana, puedes usar height: 100vh. en este caso 50% 50vh*/
@@ -19,9 +19,10 @@ header {
     justify-content: center;  /* Centrar horizontalmente */
 }
 h1 {
-    color: #363633; 
+    
     animation-timing-function: ease-out; /* Suaviza el final de la animación */
     animation: revealText 4s forwards; 
+
 }
 
 @keyframes revealText {
@@ -92,7 +93,7 @@ nav li {
 nav a {
     text-decoration: none;
     font-family: lato, sans-serif;
-    color: #363633;
+    color:black;
     font-weight: 600;
     font-size: large;
     transition: color 0.1s ease;
@@ -100,7 +101,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #79CBF0;
+    color: #44B5A5;
 }
 
 
@@ -171,6 +172,7 @@ figcaption{
     display: flex;
     flex-direction: column;
     margin: .625rem;
+    
     }
 
 .pino img{
@@ -208,14 +210,15 @@ text-align: center;
     width: 5rem;
     flex:1;
     text-align: center;
+    font-size: 1.25rem;
 }
 .tool-dev, .tool-des{
     display: flex;
-    gap: 50px;
+    gap: 2.25rem;
 }
 
 .tools img{
-    max-width: 6rem;
+    max-width: 5rem;
 }
 /*Soft and additional skills*/
 
@@ -229,7 +232,43 @@ text-align: center;
 .additional p, .soft p {
      margin: 1.25rem;
     line-height: 2em;
+    font-size: 1.25rem;
     
+}
+
+/*Section projects*/
+#projects{
+    
+    font-family: raleway, sans-serif;
+    background-image: linear-gradient(to bottom, #779490 0%, #779490 5%, #EBE2D6 50%, #EBE2D6 100%);
+    
+}
+.intro-icons{
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.motto{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.second-section-projects {
+    display: flex;
+    justify-content: space-around; /* Esto distribuirá el espacio entre los proyectos */
+}
+
+.project-icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+.project-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
