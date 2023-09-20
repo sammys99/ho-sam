@@ -10,7 +10,7 @@
         <!--Fuentes de google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
         <!--Icono de S-->
         <link rel="icon" type="images/png" sizes="512x512" href="images/Sicon.png">
      </head>
@@ -134,7 +134,7 @@
 
 
     <section id="projects">
-    
+        <div class="title-project"><p>Projects</p></div>
         <!-- Iconos de introducción -->
         
         <div class="intro-icons">
@@ -167,6 +167,7 @@
         </div>
     
         <div class="project">
+          
             <div class="project-icons">
                 <img src="images/construction.svg" alt="Construction Icon">
                 <p> In Construction</p>
@@ -195,8 +196,52 @@
             </div>
         </div> 
         </div>
-        
     </section>
+   
+   <!--Seccion de contacto-->
+
+    <section id="contact">
+        <div class="contact-background"> <!-- Imaginando que quieres un contenedor para la imagen de fondo -->
+            <div class="contact-form">
+                <!-- Formulario del lado izquierdo -->
+                <form action="ruta_del_procesamiento_del_formulario" method="post">
+                    <div class="input-group">
+                        <label for="name">Name / Company</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name/company" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+    
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                    </div>
+    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            
+            <!-- Frase y redes sociales del lado derecho -->
+            <div class="contact-info">
+                <p class="first-frase">Bring your vision to life with me.<p>
+                <p class="Second-frase">Elevate your team's potential. Let's connect.</p>
+    
+                <div class="social-icons">
+                    <a href="tu_enlace_de_linkedin" target="_blank" rel="noopener noreferrer">
+                        <img src="images/in.svg" alt="LinkedIn">
+                    </a>
+
+                    <a href="tu_enlace_de_github" target="_blank" rel="noopener noreferrer">
+                        <img src="images/gitHub.svg" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     
 
 

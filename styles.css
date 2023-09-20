@@ -243,7 +243,15 @@ text-align: center;
     background-image: linear-gradient(to bottom, #779490 0%, #779490 5%, #EBE2D6 50%, #EBE2D6 100%);
     
 }
-.intro-icons{
+  .title-project p{
+    display: flex;
+    font-size: 2.25rem;
+    font-weight: 700;
+    padding-left: 9%;
+    margin: 0; /*Remember valores predeterminado hay que quitarlos  como el margin*/
+}
+
+.intro-icons {
     display: flex;
     gap: 5rem;
     justify-content: center;
@@ -270,6 +278,110 @@ text-align: center;
     flex-direction: column;
     align-items: center;
 }
+
+/*Seccion contact*/
+
+#contact{
+    font-family: lato, sans-serif;
+    font-weight: 600;
+    background-image: url('images/contactImg.svg'); /*Se puede poner la imagen aqui en ves de en html*/
+    background-size: cover; /*Que cubra el background en este caso la imagen cubriendo el color*/
+    background-position: center center;  /*Al momento de que se hace responsivo siempre queda centrado*/
+    height: 70vh; /*Por ejemplo, si estás creando un diseño de "hero" que debe ocupar siempre el 100% de la altura de la ventana, puedes usar height: 100vh. en este caso 50% 50vh*/
+    margin-top: 2rem;
+}
+ .contact-background{
+    display: flex;
+    justify-content: space-around; 
+    padding: 2.25rem;
+    
+ }
+.contact-form{
+   line-height: 5rem;
+   align-items: center;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+}
+
+label{
+    font-size: larger;
+
+}
+
+
+input{
+    width: 100%; /* Toma todo el ancho del contenedor */
+    padding: .5rem; /* Espaciado interno para que se vea más grande */
+    border-radius: .5rem; /* Esquinas ligeramente redondeadas */
+    border: none; /* Elimina el borde predeterminado */
+   /* background-color: #f2f2f2;  Color de fondo, cambia según lo que necesites */
+    background-image: linear-gradient(to right, #F2B886 0%, #F2B886 15%, #B1A58B 40%, #779490 100%);
+
+    margin-bottom: .725rem; /* Espacio debajo de cada campo */
+     font-size: 1rem; /* Tamaño del texto dentro del campo */
+    }
+
+   textarea{
+      width: 140%;
+      height: 5rem;
+      border-radius: .5rem;
+      border: none;
+      margin-bottom: .725rem;
+      font-size: 1rem;
+      background-image: linear-gradient(to right, #F2B886 0%, #F2B886 15%, #B1A58B 40%, #779490 100%);
+
+   }
+  
+   button {
+    position: relative;
+    overflow: hidden; /*Esconde cualquier contenido que salga fuera del botón */
+    /* ... tus otros estilos ... */ 
+    display: block; /* Hace que el botón sea un bloque */
+    width: 60%; /* Toma todo el ancho del contenedor */
+    padding: .625rem; /* Espaciado interno */
+    border-radius: .5rem; /* Esquinas redondeadas */
+    border: none; /* Elimina el borde predeterminado */
+    background-image: linear-gradient(to right, #F2B886 0%, #F2B886 15%, #B1A58B 40%, #779490 100%);
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse por encima */
+    margin: 1.2rem auto; /* Centra el botón horizontalmente */
+    transition: background-color 0.3s; /* Agrega una transición suave al cambiar el color de fondo */
+    font-family: lato, sans-serif;
+    font-weight: 600;
+    z-index: 1; /*Aqui el texto permanecera arriba*/
+}
+
+button::before {
+    content: ''; /* Content obligatorio para ::before */
+    position: absolute;
+    
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    background-color: #779490;
+    z-index: -1; /* Esto es para que solo el color se muestre pero el texto sigue arriba */
+    transition: width 0.3s; /* Transición suave del efecto de llenado */
+}
+
+/* Al pasar el mouse sobre el botón, cambia el width del pseudoelemento para llenar el botón con el color final */
+button:hover::before {
+    width: 100%;
+    
+}
+
+/*Segunda parte contacto*/
+
+ .social-icons{
+    display: flex;
+    gap: 1rem;
+ }
+
 
 
 
