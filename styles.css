@@ -1,3 +1,8 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 /*Body and header section*/
 body {
     margin: 0;
@@ -377,14 +382,80 @@ button:hover::before {
 
 /*Segunda parte contacto*/
 
- .social-icons{
+ .contact-info{
     display: flex;
-    gap: 1rem;
+    flex-direction: column;
+   
  }
 
+.first-frase{
+    font-size: 4rem;
+    margin: 0;
+    padding: 0;
+}
+.second-frase{
+    font-size: 1.25rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: center; 
+    gap: 1rem;   
+ }
+
+ /*Footer*/
+
+ footer {
+    
+    background-color: #779490;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Esto alinea los contenidos de los divs al fondo del footer */
+    font-family: lato, sans-serif;
+    font-weight: 400;
+    
+}
+
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    align-items: center;
+    
+}
+.footer-left a{
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    color:black;
+    font-weight: 600;
+    
+}
+.footer-left a:hover{
+    color: #44B5A5;
+}
 
 
+.footer-center{
+    display: flex;
+    align-items: end; /*Este me ayudo a que quedaran hasta al final los grass*/
+    gap: .375rem;
+}
 
+.icon-footer {
+    height: 1.25rem;
+    width: auto; /* Esto mantiene las proporciones del ícono */
+    
+}
+ .deer-footer{
+    height: 2.25rem;
+    width: auto;
+ }
+
+.palabra{
+    color:#F2B886;
+}
 
 /* Responsive design*/
 
