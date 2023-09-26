@@ -1,5 +1,5 @@
 html {
-    scroll-behavior: smooth;
+ scroll-behavior: smooth;
 }
 
 
@@ -205,28 +205,108 @@ figcaption{
 text-align: center;
     }
 /*Second div tools i use*/
-.tools{
-    display: flex;/*  Establece el contenedor como flexbox */
-    /*justify-content: space-between;*/
-     
-    margin:1.25rem 4.375rem;
-    
-}
-.tool-use{
+.tools {
+    display: flex;
+    margin: 1.25rem 4.375rem;
+  }
+  
+  .tool-use {
     width: 5rem;
-    flex:1;
+    flex: 1;
     text-align: center;
     font-size: 1.25rem;
     color: #F2B886;
-}
-.tool-dev, .tool-des{
+  }
+  
+  .tool-dev, .tool-des {
     display: flex;
     gap: 2.25rem;
-}
-
-.tools img{
+  }
+  
+  .tool-icon {
+    position: relative;
+    display: inline-block;
     max-width: 5rem;
-}
+    max-height: 5rem;
+  }
+  
+  .tool-icon img {
+    position: relative;
+    z-index: 2;
+    max-width: 100%;
+  }
+  
+  .svg-background {
+    position: absolute;
+    bottom: 10%;
+    width: 5rem; 
+    height: 5rem;
+    border-radius: 100%;
+    
+    filter: blur(8px);
+    opacity: 0.6;
+    z-index: 1;
+   
+  }
+  
+  .svg-background1 {
+    animation: colorChange1 1.2s infinite; /* Puedes ajustar el tiempo como quieras */
+  }
+  
+  .svg-background2 {
+    animation: colorChange2 1s infinite;
+  }
+  
+  .svg-background3 {
+    animation: colorChange3 1.3s infinite;
+  }
+  
+  .svg-background4 {
+    animation: colorChange4 1.5s infinite;
+  }
+  .svg-background5 {
+    animation: colorChange5 1.1s infinite;
+  }
+  .svg-background6 {
+    animation: colorChange6 1.2s infinite;
+  }
+  
+  @keyframes colorChange1 {
+    0%, 100% { background:transparent; }
+    80% { background: #FF4B00; }
+    
+  }
+  
+  @keyframes colorChange2 {
+    0%, 100% { background: transparent; }
+    80% { background: #2196F3; }
+    
+  }
+  
+  @keyframes colorChange3 {
+    0%, 100% { background: transparent; }
+    80% { background: #FFC107; }
+    
+  }
+  
+  @keyframes colorChange4 {
+    0%, 100% { background: transparent; }
+    80% { background: #00CF7F; }
+  
+  }
+  
+  @keyframes colorChange5 {
+    0%, 100% { background: transparent; }
+    80% { background: #2994CB; }
+    
+  }
+  
+  @keyframes colorChange6 {
+    0%, 100% { background: transparent; }
+    80% { background: #FF61F6; }
+    
+  }
+  
 /*Soft and additional skills*/
 
 .skills{
