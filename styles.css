@@ -73,6 +73,7 @@ h1 {
 /* Nav bar */
 
 nav {
+    z-index: 10; /* Un valor más alto que otros elementos superpuestos */
     position: absolute; 
     top: 2rem; 
     left: 2rem; 
@@ -86,13 +87,18 @@ nav {
 
 
 nav ul {
-    list-style: none; /* No bullets para la lista */
-    padding: 0; /* Elimina el padding por defecto en la lista */
-    margin: 0; /* Elimina el margin por defecto en la lista */
+    display: flex;
+    flex-direction: column;  /* Para que los elementos estén en columna en móvil */
+    align-items: center;  /* Centrar los elementos en la línea */
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav li {
     margin-bottom: 1.25rem;
+    width: 100%;
 }
 
 nav a {
@@ -103,12 +109,26 @@ nav a {
     font-size: large;
     transition: color 0.1s ease;
     display: block; /* Hace que el enlace ocupe todo el ancho disponible, por lo que no tendrías que colocar el cursor justo sobre el texto */
+    width: auto;
+    padding: auto;
+    transition: color .4s;
 }
+
+.close-img{
+    width: 5rem;
+        height: 1rem;
+}
+
+
+
 
 nav a:hover {
     color: #44B5A5;
 }
 
+#menuIcon{
+    display: none;
+  }
 
 /* Seccion get to know me */
 strong {
@@ -550,19 +570,97 @@ button:hover::before {
     header {
         height: 30vh; /* Reduce la altura en dispositivos más pequeños */
     }
-
+  
     nav {
-        display: none;
-        width: 40%; /* o el ancho que desees para el panel deslizante */
-        height: 50%;
-        position: fixed;
-        top: 0;
-        left: -250px; /* Esto oculta inicialmente el menú a la izquierda */
-        background-color: #333; /* o el color de fondo que prefieras */
-        overflow-y: auto; /* en caso de que el contenido del menú sea muy largo */
-        transition: 0.5s; /* animación suave al mostrar/ocultar */
+        position: fixed; 
+        top: 2rem; 
+        left: 2.25rem; 
+        width: 30%;  /* Puedes ajustar según tus necesidades */
+        height: 20hv;  /* Toma toda la altura de la pantalla */
+        background-color: #363633;
+        clip-path: circle(0% at top left);
+        transition: clip-path .4s;
+        margin: .375rem;
+        /* transition: left 3s;   Transición suave */
+        z-index: 20;  /* Asegurarse de que esté por encima de otros contenidos */
+        
+    }  
+    nav a{
+        color:#F2B886;
     }
 
+  nav ul {
+    display: block;
+   /* flex-direction: column;   Alinea los elementos en una columna. */
+    /*align-items: center;   Centra los elementos horizontalmente. */
+   /* width: 100%;   Ocupa todo el ancho del contenedor. */
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    width: auto;  /* Deja que el elemento tome el ancho de su contenido. */
+    text-align: left;  /* Asegura que el texto esté centrado. */
+   
+}
+
+nav a {
+    display: inline-block;  /* Cambia a inline-block para que tome el ancho del contenido. */
+    padding: 0.5rem 1rem;  /* Añade padding para mejorar la accesibilidad en dispositivos táctiles. */
+    transition: color 0.4s ease;
+}
+
+   /*javascript active class to toggle*/
+    /*nav {
+       display: none;
+        
+        }*/
+
+     nav.active{
+        clip-path: circle(150% at top left);
+       /* display: block;*/
+     }
+    
+     #menuIcon {
+        display: block;
+          /*Tamaño base*/
+        position: fixed;
+        top: 1.5rem; left: 1rem;
+        cursor: pointer;
+        z-index: 10;
+    }
+    
+        #menuIcon img{
+        position: relative;
+        
+       }
+       
+    .close-img{
+        width: 1.5rem;
+       height: 1.2rem;
+       filter: invert(44%) sepia(99%) saturate(2115%) hue-rotate(186deg) brightness(101%) contrast(91%);    }
+    .menu-img{
+        width: 2rem;
+       height: 2.2rem;
+    }
+    
+     .menu-img.active {
+        display: none;
+    }
+    
+    
+    .close-img {
+        
+        display: none;
+        
+    }
+    
+    .close-img.active {
+        
+        display: block;
+        
+    }
+    
    
      #get-to-know-me {
         flex-direction: column;  /* Cambiar la dirección para que los elementos se apilen verticalmente */
@@ -584,38 +682,11 @@ button:hover::before {
     font-size: 60%;
     padding: 5px;
    }
-
-    #menuIcon {
-        font-size: 30px; /*Tamaño base*/
-        width: 1em;    /*em tamaño relativo al px del tamaño base*/
-        height: 1.5em;
-        position: absolute;
-        top: 40px; left: 20px;
-        cursor: pointer;
-    }
+  
+  
+   
     
-    .line {
-        width: 100%;
-        height: 0.1em;
-        background-color: black;
-        position: absolute;
-    }
-    
-    #topLine {
-        top: 0;
-        
-        
-    }
-    
-    #middleLine {
-        top: .40em;
-        
-    }
-    
-    #bottomLine {
-        
-        top: .80em;
-    }
+   
 
     
 }
@@ -624,16 +695,9 @@ button:hover::before {
     h1, h2 {
         font-size: 1.5em;  /* Reducir el tamaño de las fuentes */
     }
-    nav {
-        width: 100%;  /* Ocupar todo el ancho de la pantalla */
-        padding-left: 0;
-        flex-direction: row;  /* Cambiar la dirección para que los elementos estén en línea */
-        justify-content: space-around;  /* Distribuir equitativamente los elementos en la línea */
-    }
+   
     
-    #menuIcon {
-        font-size: 30px;
-    }
+   
 
 
 }
