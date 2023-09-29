@@ -387,8 +387,30 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
+     
+}
+.image-wrapper{
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* esto asegura que la imagen y el h4 estén debajo de la descripción */
+    
+}
+.project-description {
+    position: absolute;
+    bottom: -100%; /* Lo posicionas completamente fuera de la vista al principio */
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro transparente */
+    color: white;
+    font-size: 1.25rem;
+    transition: bottom 0.3s;
+    
 }
 
+.image-wrapper:hover .project-description {
+    bottom: 0; /* Al hacer hover, la descripción se desliza hacia arriba y se muestra completamente */
+}
 /*Seccion contact*/
 
 #contact{
@@ -510,6 +532,11 @@ button:hover::before {
     gap: 1rem;   
  }
 
+.social-icons img:hover{
+    filter: invert(53%) sepia(64%) saturate(2468%) hue-rotate(121deg) brightness(103%) contrast(101%);
+}
+
+
  /*Footer*/
 
  footer {
@@ -610,11 +637,7 @@ nav a {
     transition: color 0.4s ease;
 }
 
-   /*javascript active class to toggle*/
-    /*nav {
-       display: none;
-        
-        }*/
+
 
      nav.active{
         clip-path: circle(150% at top left);
@@ -683,28 +706,12 @@ nav a {
     padding: 5px;
    }
   
-  
-   
-    
-   
-
-    
 }
-/*Responsive header y nav bar para tablets*/
-@media (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.5em;  /* Reducir el tamaño de las fuentes */
-    }
-   
-    
-   
 
-
-}
 /* Estilos para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
     h1, h2 {
-        font-size: 1.2em;  /* Reducir aún más el tamaño de las fuentes */
+        font-size: 1rem;  /* Reducir aún más el tamaño de las fuentes */
     }
 
     
@@ -730,6 +737,8 @@ nav a {
 
 /* Para dispositivos con pantalla de hasta 768px (típico de teléfonos) */
 @media (max-width: 768px) {
+   
+   
 
     /* Sección Tools and skills */
     .presentation-skills {
