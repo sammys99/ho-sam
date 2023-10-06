@@ -14,7 +14,7 @@ body {
 
 header {
     font-family: lato, sans-serif;
-    background-image: url('images/forest.svg'); /*Se puede poner la imagen aqui en ves de en html*/
+    background-image: url('images/forest.png'); /*Se puede poner la imagen aqui en ves de en html*/
     background-size: cover; /*Que cubra el background en este caso la imagen cubriendo el color*/
     background-position: center center;  /*Al momento de que se hace responsivo siempre queda centrado*/
     height: 50vh; /*Por ejemplo, si estás creando un diseño de "hero" que debe ocupar siempre el 100% de la altura de la ventana, puedes usar height: 100vh. en este caso 50% 50vh*/
@@ -360,7 +360,7 @@ text-align: center;
 
 .intro-icons {
     display: flex;
-    gap: 5rem;
+    
     justify-content: center;
     align-items: flex-end;
     margin: 1rem;
@@ -381,7 +381,7 @@ text-align: center;
 .project-icons{
     display: flex;
     justify-content: center;
-    gap: 1.25rem;
+    font-weight: 500;
 }
 .project-image{
     display: flex;
@@ -389,6 +389,17 @@ text-align: center;
     align-items: center;
      
 }
+.project-image a {
+
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+
+}
+.project-image a:hover{
+    color: #00CF7F;
+}
+
 .image-wrapper{
     text-align: center;
     position: relative;
@@ -416,7 +427,7 @@ text-align: center;
 #contact{
     font-family: lato, sans-serif;
     font-weight: 600;
-    background-image: url('images/contactImg.svg'); /*Se puede poner la imagen aqui en ves de en html*/
+    background-image: url('images/contactimg.png'); /*Se puede poner la imagen aqui en ves de en html*/
     background-size: cover; /*Que cubra el background en este caso la imagen cubriendo el color*/
     background-position: center center;  /*Al momento de que se hace responsivo siempre queda centrado*/
     min-height: 70vh; /*with min-height need to have at least 70% of the height viewport, but it can expand if the elemnts need more space*/
