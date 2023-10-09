@@ -37,6 +37,7 @@
         <p>
         I conducted some research on colors that evoke a sense of relaxation, tropical vibes, and minimalism. This led me to the following choices: (colors are presented).
         </p>
+       <!--Display colors of rectangles-->
         <div class="rectangles">
         <img src="../images/Rectangle 28.svg" alt="rectangle-beich">
         <h5>EBE2D6</h5>
@@ -47,38 +48,93 @@
         <img src="../images/rectangleOrange.svg" alt="rectangle-orange">
         <h5>F2B886</h5>
         </div>
-        <p> Regarding typography, I also undertook research, with the assistance of ChatGPT, to find simple yet modern fonts that exude a clean and professional appearance. This research directed me to these two font types: (fonts).</p>
+        <!--Typography-->
+        <p> Regarding typography, I also undertook research, with the assistance of <br>ChatGPT, to find simple yet modern fonts that exude a clean and professional <br>appearance. This research directed me to these two font types: (fonts).</p>
         <div class="lato-font">
             <p>Lato <br>For h1, h2, h3, h4<br>Header</p>
         </div>
         <div class="raleway-font">
             Raleway<br>For text and sections
         </div>
-        
-    
-    
-        </section>
+        <!--Img of contact and header-->
+        <p>I chose a design that incorporates forests and landscapes because <br>I have a passion for nature and hiking. Integrating an element <br>of my own interests and passions seemed fundamental, <br>and besides, natural landscapes provide a visually pleasing <br>and serene aesthetic. Thus, I decided to showcase them on my page.</p>
+        <div class="img-examples">
+
+         <img src="../images/forestCase.png" alt="forest-img">
+         <img src="../images/contactCase.png" alt="mountains-img">
+         </div>
+       </section>
         
         <section id="iteration-section">
-            <!-- Contenido sobre las iteraciones y ajustes de diseño -->
+          <!--Iterations with imgs-->
             <h2>Some Iterations I Made</h2>
-            <!-- Agrega imágenes y descripciones como se detalló -->
-        </section>
+            <div class="img-to-show">
+
+            <img src="../images/colorsIcoons.png" alt="screenshot-page">
+            <p>Icons with colors</p>
+            <div class="arrow"></div>
+            <img src="../images/noColorsIcoons.png" alt="screenshot-page">
+            <p>Icons without colors</p>
+            </div>
+            
+           </section>
 
         <section id="result-section">
-            <!-- Imágenes y texto del RESULTADO de tus iteraciones -->
-        </section>
+          <!-- Imágenes y texto del RESULTADO de tus iteraciones -->
+          <p>One iteration involved the visual treatment of the technology icons I use.<br> In an initial design version, these icons were colorful to vividly highlight<br> each technology. However, reflecting on the overall cohesion of the design and<br> the color scheme of my page, which predominantly used black icons, I decided to <br>unify the aesthetic by making all icons adhere to this black palette. <br>But I didn’t want to lose the visual impact that the colorful icons brought,<br> so I devised a solution using CSS: I added a flickering <br>light effect behind each icon. This maintained the cohesive black color <br>of the icons while also adding a dynamic and visually appealing <br>effect that catches the viewer's eye. I’ve attached a screenshot <br>to illustrate this effect in action. </p>
+          <h4>The result</h4>
+          <img src="../images/iconsResult.png" alt="screenshot-page">
+          
+         </section>
 
         <section id="development-section">
-            <!-- Desglose de las herramientas y tecnologías utilizadas -->
+          <!-- Desglose de las herramientas y tecnologías utilizadas -->
+         <h2>Development</h2>
+
+         <p>The development process was a deliberate experience, honing in on selecting tools<br> and technologies that were not only suitable for the project but also aligned<br> with my skills and requirements. I chose Figma in the design phase due to its <br>intuitive user interface and robust prototyping functionalities, which effectively allowed me to visualize<br> the end product and make real-time adjustments in the early stages of the project.<br> Moving the design into code, I opted for HTML, CSS, and JavaScript for <br>their simplicity and efficiency. HTML and CSS are pillars in constructing any web structure <br>and style, providing the solid and customizable foundation I required. JavaScript,<br> on the other hand, offered me the ability to add interactivity and dynamism<br> to the page without overburdening or unnecessarily complicating it. The combination of <br>these technologies enabled me to build a website that was not only visually <br>appealing but also functional and user-friendly.</p>
+         
         </section>
 
         <section id="problem-solution-section">
             <!-- Problemas encontrados y las soluciones implementadas -->
+        <h2>Problems and solutions</h2>
+
+        <p>Despite this being my first project, I didn't encounter numerous challenges with HTML <br>or CSS; however, certain details did arise that demanded exploration beyond documentation<br> and Google, wherein ChatGPT became a valuable tool in problem-solving. One particular <br>challenge was centering a 'div' containing other internal 'divs,' maintaining a specific order<br> when implementing responsiveness. The solution was found in the code (code shown)</p>
+        <!--Acuerdate de quitar el inline style al html de la img-->
+        <img src="../images/1code.png" alt="screenshot-vsc" style: width="200px">
+       
+        <p>where simply using 'align-items: end;' achieved the desired effect. At times, <br>what seems to be a straightforward task can become complicated depending on one's <br>familiarity with the issue; fortunately, I was able to overcome it.</p>
+       
+        <p>Another challenge presented itself when attempting to create a light effect behind <br>my icons. The issue was that the color was obscuring the image, or nothing was <br>visible at all. Again, I turned to ChatGPT and some video tutorials, discovering that <br>utilizing multiple 'divs' could create the desired effect (code shown).</p>
+       
+        <div class="challenge-second-img">
+
+         <img src="../images/2code.png" alt="screenshot-code" style: width="200px">
+         <img src="../images/3code.png" alt="screenshot-code" style: width="200px">
+         </div>
+       
+        <p>These are just a few examples. Lastly, in JavaScript, while dealing with the implementation <br>of responsive design in code, I encountered the inability to make the menu close <br>and revert to its normal state upon clicking a section. Once again, I turned to ChatGPT and <br>reviewed documentation about functions. I realized that it's not always necessary to <br>consolidate everything into a single function. In this case, two functions were utilized: <br>one that opens the menu and another that closes it, and, together with CSS, the desired effect<br> was achieved, but there were other details to address. </p>
+         
+        <div class="challenge-third-img">
+
+            <img src="../images/4code.png" alt="screenshot-code" style: width="200px">
+            <img src="../images/5code.png" alt="screenshot-code" style: width="200px">
+
+        </div>
+        
+        <p>The key is that, when faced with a problem, it's crucial to seek a solution,<br> not only by copying but understanding, to avoid future stagnations.<br> I realized that observing others' work is vital, as many might have faced<br> similar challenges, and exploring their solutions allows seeing various <br>ways to tackle and overcome obstacles.</p>
+
         </section>
 
         <section id="thank-you-section">
             <!-- Mensaje de agradecimiento y CTA -->
+        <h2>Thank You for Reading All the Way Here</h2>
+
+        <p>Your time is valuable, and I’m grateful that you’ve spent it<br> getting to know more about my work and process. If you <br>find yourself inspired by what you've read and seen, I would <br>love to explore how we might work together to bring your<br> own ideas and projects to life.</p>
+        
+        <button type="submit">Let's Explore Together</button>
+        
+        
         </section>
     </main>
 
