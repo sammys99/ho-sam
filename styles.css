@@ -507,7 +507,7 @@ button::before {
     right: 0;
     bottom: 0;
     width: 0%;
-    background-color: #779490;
+    background-color: #00CF7F;
     z-index: -1; /* Esto es para que solo el color se muestre pero el texto sigue arriba */
     transition: width 0.3s; /* Transición suave del efecto de llenado */
 }

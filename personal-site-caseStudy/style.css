@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*El ancho y la altura incluyen el contenido, el padding y el borde*/
+    background-image: linear-gradient(to bottom, #EBE2D6 0%, #EBE2D6 5%, #F2B886 50%, #F2B886 100%);
+    color: black;
+    font-weight: 400;
+    font-size:1.375rem;
+}
+/*Style header and nav to home*/
+header {
+    font-family: lato, sans-serif;
+    height: 50vh; /*Por ejemplo, si estás creando un diseño de "hero" que debe ocupar siempre el 100% de la altura de la ventana, puedes usar height: 100vh. en este caso 50% 50vh*/
+    position: relative;/*Esto significa que cualquier elemento hijo de header con position: absolute; se posicionará en relación al header. Si no tuviera position: relative;, los hijos con position: absolute; se posicionarían en relación con el cuerpo del documento o el ancestro posicionado más cercano.*/
+    display: flex; 
+    gap: 2rem;
+    flex-direction: column;
+    align-items: center;  /* Centrar verticalmente */
+    justify-content: center;  /* Centrar horizontalmente */
+}
+
+#back{
+    z-index: 10;
+    position: absolute;
+    top: 2rem; 
+    left: 2rem; 
+    position: fixed;
+    
+}
+
+
+
+#back a{
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    color:black;
+    font-weight: 600;
+    font-size: large;
+    transition: color .2s;
+}
+
+#back a:hover{
+    color: #44B5A5
+}
+
+
+#back img{
+    width: 2.5rem;
+}
+
+main{
+    font-family: raleway, sans-serif;
+}
+
+
+/*Design section*/
+
+#design-section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: left;
+}
+
+.rectangles{
+    display: flex;
+    gap: 1rem;
+}
+.rectangle-wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.font-wrap{
+    display: flex;
+    
+    gap: 5rem;
+}
+
+.lato-font{
+    text-align: left;
+    font-family: lato, sans-serif;
+}
+
+.raleway-font{
+    text-align: left;
+}
+
+.img-examples{
+    display: flex;
+    gap: 5rem;
+    margin: 1rem;
+}
+
+/*Section iteration*/
+
+#iteration-section{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+}
+
+.img-to-show{
+    display: flex;
+    gap: 3rem;
+}
+
+.img-it-wrap{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.img-it-wrap img{
+    width: 20rem;
+    height: 20rem;
+}
+
+.arrow {
+    width: 4rem;
+    height: 2.25rem;
+    background: black;
+    margin-top: 15%;
+   /*coordenadas para hacer la flecha*/
+    clip-path: polygon(
+    0% 20%,
+    60% 20%,
+    60% 0%,
+    100% 50%,
+    60% 100%,
+    60% 80%,
+    0% 80%
+);
+}
+/*Result iteration section and development */
+
+#result-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: left;
+    padding: 1rem;
+    
+}
+
+#result-section img{
+
+    width: 25rem;
+    height: 20rem;
+    margin-bottom: 1.25rem;
+}
+
+#development-section{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  padding: 1rem;
+}
+
+#development-section p{
+    margin: 0 0 0 2.5rem;
+    padding-left: 2.65rem;
+}
+
+
+
+/*Problems and solutions with screentshots section*/
+
+#problem-solution-section{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+#problem-solution-section img{
+
+    width: 25rem;
+    height: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+/*Thank you section*/
+
+#thank-you-section{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    background: #779490;
+    font-family: lato, sans-serif;
+    font-size: 1rem;
+    padding: 1rem;
+    margin: 1rem 0 0 0;
+}
+
+.palabra{
+    color:#F2B886;
+}
+
+footer p{
+    margin: 1rem 2rem 0 0;
+}
+
+a.button{
+    position: relative;
+    
+    /*Esconde cualquier contenido que salga fuera del botón */
+    /* ... tus otros estilos ... */ 
+    display: block; /* Hace que el botón sea un bloque */
+    width: 20%; /* Toma todo el ancho del contenedor */
+    padding: .625rem; /* Espaciado interno */
+    border-radius: .5rem; /* Esquinas redondeadas */
+    border: none; /* Elimina el borde predeterminado */
+    background:#700EF0 ;
+    font-size: 1rem; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse por encima */
+    margin: 1rem ; /* Centra el botón horizontalmente */
+    text-align: center;
+    text-decoration: none;
+    color: #F2B886;
+    font-family: lato, sans-serif;
+    font-weight: 600;
+    
+}
+
+a.button:hover{ /*Al momento de hacer hover hace sombra alrededor*/
+    box-shadow: 0 0 .5rem cyan,
+    0 0 2rem cyan, 0 0 2.5rem #700EF0,
+    0 0 3rem #700EF0, 0 0 4rem #700EF0;
+}

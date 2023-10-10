@@ -6,13 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Portfolio of a creative designer and developer specializing in UX design, front-end development, web development, web design, and more.">
         <title>Personal site Project</title>
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
         <!--Fuentes de google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;600;700&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
         <!--Icono de S-->
-        <link rel="icon" type="images/png" sizes="512x512" href="images/Sicon.png">
+        <link rel="icon" type="images/png" sizes="512x512" href="../images/Sicon.png">
      </head>
 
      <body>
@@ -23,11 +23,11 @@
         
         <div id="back">
             <a href="../index.html"> <!--El ../ es para ir a otro nivel de archivo y poder utilizar de la carpeta principal las img-->
-            <img src="../images/menuIcon.svg" alt="small-pine" class="menu-img">
-            &nbsp;&nbsp; Home
+            <img src="../images/menuIcon.svg" alt="small-pine" class="menu-img">&nbsp;&nbsp;
+             Home
          </a>
         </div>
-       <p>"A brief overview of my journey in creating my website: <br>the rationale behind the color choices, the design process in Figma,<br>the challenges encountered when translating the design to code, and the solutions I devised."</p>
+       <h3>"A brief overview of my journey in creating my website: <br>the rationale behind the color choices, the design process <br>in Figma,the challenges encountered when translating the <br>design to code, and the solutions I devised."</h3>
       </header>
 
       <main>
@@ -35,26 +35,42 @@
             <!-- Contenido relacionado con la sección de DESIGN va aquí -->
         <h2>Design</h2>
         <p>
-        I conducted some research on colors that evoke a sense of relaxation, tropical vibes, and minimalism. This led me to the following choices: (colors are presented).
+        I conducted some research on colors that evoke a sense of relaxation,<br> tropical vibes, and minimalism. This led me to the following choices: (colors are presented).
         </p>
        <!--Display colors of rectangles-->
         <div class="rectangles">
+        <div class="rectangle-wrap">
         <img src="../images/Rectangle 28.svg" alt="rectangle-beich">
         <h5>EBE2D6</h5>
+        </div>
+        <div class="rectangle-wrap">
         <img src="../images/rectangleBlack.svg" alt="rectangle-black">
         <h5>363633</h5>
+        </div>
+        <div class="rectangle-wrap">
         <img src="../images/rectangleGreen.svg" alt="rectangle-green">
         <h5>779490</h5>
+        </div>
+        <div class="rectangle-wrap">
         <img src="../images/rectangleOrange.svg" alt="rectangle-orange">
         <h5>F2B886</h5>
         </div>
+        </div>
         <!--Typography-->
-        <p> Regarding typography, I also undertook research, with the assistance of <br>ChatGPT, to find simple yet modern fonts that exude a clean and professional <br>appearance. This research directed me to these two font types: (fonts).</p>
+        <p> Regarding typography, I also undertook research, with the assistance of <br>ChatGPT, to find simple yet modern fonts that exude a clean and professional <br>appearance. This research directed me to these two font types:</p>
+        <div class="font-wrap">
         <div class="lato-font">
-            <p>Lato <br>For h1, h2, h3, h4<br>Header</p>
+            <h4>Lato 
+                <br>For h1, h2, h3, h4
+                <br>Header
+            </h4>
         </div>
         <div class="raleway-font">
-            Raleway<br>For text and sections
+           <h4>
+             Raleway
+           <br>For text and sections
+        </h4>
+        </div>
         </div>
         <!--Img of contact and header-->
         <p>I chose a design that incorporates forests and landscapes because <br>I have a passion for nature and hiking. Integrating an element <br>of my own interests and passions seemed fundamental, <br>and besides, natural landscapes provide a visually pleasing <br>and serene aesthetic. Thus, I decided to showcase them on my page.</p>
@@ -62,19 +78,27 @@
 
          <img src="../images/forestCase.png" alt="forest-img">
          <img src="../images/contactCase.png" alt="mountains-img">
-         </div>
+         
+        </div>
        </section>
         
         <section id="iteration-section">
           <!--Iterations with imgs-->
-            <h2>Some Iterations I Made</h2>
+          <h3>Some Iterations I Made</h3>
+            
             <div class="img-to-show">
-
-            <img src="../images/colorsIcoons.png" alt="screenshot-page">
+             
+            <div class="img-it-wrap">  
+            <img src="../images/colorsIcoons.png" alt="screenshot-page" >
             <p>Icons with colors</p>
+            </div> 
+            <!--style="height: 20rem; width: 20rem;"-->
             <div class="arrow"></div>
-            <img src="../images/noColorsIcoons.png" alt="screenshot-page">
+            
+            <div class="img-it-wrap"> 
+            <img src="../images/noColorsIcoons.png" alt="screenshot-page" >
             <p>Icons without colors</p>
+            </div>
             </div>
             
            </section>
@@ -91,7 +115,7 @@
           <!-- Desglose de las herramientas y tecnologías utilizadas -->
          <h2>Development</h2>
 
-         <p>The development process was a deliberate experience, honing in on selecting tools<br> and technologies that were not only suitable for the project but also aligned<br> with my skills and requirements. I chose Figma in the design phase due to its <br>intuitive user interface and robust prototyping functionalities, which effectively allowed me to visualize<br> the end product and make real-time adjustments in the early stages of the project.<br> Moving the design into code, I opted for HTML, CSS, and JavaScript for <br>their simplicity and efficiency. HTML and CSS are pillars in constructing any web structure <br>and style, providing the solid and customizable foundation I required. JavaScript,<br> on the other hand, offered me the ability to add interactivity and dynamism<br> to the page without overburdening or unnecessarily complicating it. The combination of <br>these technologies enabled me to build a website that was not only visually <br>appealing but also functional and user-friendly.</p>
+         <p>The development process was a deliberate experience, honing in on <br>selecting tools and technologies that were not only suitable for the project <br>but also aligned with my skills and requirements. I chose Figma in the design phase due to its <br>intuitive user interface and robust prototyping functionalities, which effectively allowed me to visualize<br> the end product and make real-time adjustments in the early stages of the project.<br> Moving the design into code, I opted for HTML, CSS, and JavaScript for <br>their simplicity and efficiency. HTML and CSS are pillars in constructing any web structure <br>and style, providing the solid and customizable foundation I required. JavaScript,<br> on the other hand, offered me the ability to add interactivity and dynamism<br> to the page without overburdening or unnecessarily complicating it. The combination of <br>these technologies enabled me to build a website that was not only visually <br>appealing but also functional and user-friendly.</p>
          
         </section>
 
@@ -132,14 +156,19 @@
 
         <p>Your time is valuable, and I’m grateful that you’ve spent it<br> getting to know more about my work and process. If you <br>find yourself inspired by what you've read and seen, I would <br>love to explore how we might work together to bring your<br> own ideas and projects to life.</p>
         
-        <button type="submit">Let's Explore Together</button>
-        
-        
-        </section>
+    </section>
+
     </main>
 
     <footer>
         <!-- Código del FOOTER -->
+        
+        <p>San Diego, <span class="palabra">California</span></p>
+
+        <a href="../index.html#contact" class="button">Let's Explore Together</a>
+        
+        <p>© <span class="palabra">2023</span> Samuel Padilla. <span class="palabra">All</span> rights reserved.</p>
+    
     </footer>
 
 
