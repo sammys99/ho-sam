@@ -616,7 +616,7 @@ button:hover::before {
         width: 30%;  /* Puedes ajustar según tus necesidades */
         height: 20hv;  /* Toma toda la altura de la pantalla */
         background-color: #363633;
-        clip-path: circle(0% at top left);
+        clip-path: circle(0% at top left); /*Efecto cuando abre y cierra*/
         transition: clip-path .4s;
         margin: .375rem;
         /* transition: left 3s;   Transición suave */
