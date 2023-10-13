@@ -600,6 +600,16 @@ button:hover::before {
     color:#F2B886;
 }
 
+.attribution{
+    text-decoration: none;
+    font-family: lato, sans-serif;
+    color: black;
+}
+
+.footer-right a:hover{
+    color:#00CF7F;
+}
+
 /* Responsive design*/
 
 /*Diferrents tablets more large*/

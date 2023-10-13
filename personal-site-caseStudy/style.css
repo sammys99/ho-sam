@@ -5,8 +5,7 @@ body {
     background:#EBE2D6; 
     color: black;
     font-weight: 400;
-    font-size:1.375rem;
-}
+    font-size:1.375rem;}
 /*Style header and nav to home*/
 header {
     font-family: lato, sans-serif;
@@ -16,113 +15,71 @@ header {
     gap: 2rem;
     flex-direction: column;
     align-items: center;  /* Centrar verticalmente */
-    justify-content: center;  /* Centrar horizontalmente */
-}
-
+    justify-content: center;  /* Centrar horizontalmente */}
 #back{
     z-index: 10;
     position: absolute;
     top: 2rem; 
     left: 2rem; 
-    position: fixed;
-    
-}
-
-
-
+    position: fixed;}
 #back a{
     text-decoration: none;
     font-family: lato, sans-serif;
     color:black;
     font-weight: 600;
     font-size: large;
-    transition: color .2s;
-}
-
+    transition: color .2s;}
 #back a:hover{
-    color: #44B5A5
-}
-
-
+    color: #44B5A5}
 #back img{
-    width: 2.5rem;
-}
-
+    width: 2.5rem;}
 main{
-    font-family: raleway, sans-serif;
-}
-
-
+    font-family: raleway, sans-serif;}
 /*Design section*/
-
 #design-section{
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 1rem;
     padding: 1rem;
-    text-align: left;
-}
-
+    text-align: left;}
 .rectangles{
     display: flex;
-    gap: 1rem;
-}
+    gap: 1rem;}
 .rectangle-wrap{
     display: flex;
     flex-direction: column;
     text-align: center;
     gap: 1rem;
-    margin: 2rem;
-}
-
+    margin: 2rem;}
 .font-wrap{
     display: flex;
-    
-    gap: 5rem;
-}
-
+    gap: 5rem;}
 .lato-font{
     text-align: left;
-    font-family: lato, sans-serif;
-}
-
+    font-family: lato, sans-serif;}
 .raleway-font{
-    text-align: left;
-}
-
+    text-align: left;}
 .img-examples{
     display: flex;
     gap: 5rem;
-    margin: 1rem;
-}
-
-/*Section iteration*/
-
+    margin: 1rem;}
+    /*Section iteration*/
 #iteration-section{
     display: flex;
     flex-direction: column;
     margin: 1rem;
-    align-items: center;
-}
-
+    align-items: center;}
 .img-to-show{
     display: flex;
-    gap: 3rem;
-}
-
+    gap: 3rem;}
 .img-it-wrap{
     display: flex;
     flex-direction: column;
-    text-align: center;
-}
-
+    text-align: center;}
 .img-it-wrap img{
     width: 20rem;
-    height: 20rem;
-}
-
+    height: 20rem;}
 .arrow {
     width: 4rem;
     height: 2.25rem;
@@ -136,74 +93,47 @@ main{
     100% 50%,
     60% 100%,
     60% 80%,
-    0% 80%
-);
-}
+    0% 80%);}
 /*Result iteration section and development */
-
 #result-section{
-
-    display: flex;
+display: flex;
     flex-direction: column;
     align-items:center;
     text-align: left;
-    padding: 1rem;
-    
-}
-
+    padding: 1rem;}
 #result-section img{
-
-    width: 25rem;
+width: 25rem;
     height: 20rem;
-    margin-bottom: 1.25rem;
-}
-
+    margin-bottom: 1.25rem;}
 #development-section{
-
-  display: flex;
+display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
-  padding: 1rem;
-}
-
+  padding: 1rem;}
 #development-section p{
     margin: 0 0 0 2.5rem;
-    padding-left: 2.65rem;
-}
-
-
-
+    padding-left: 2.65rem;}
 /*Problems and solutions with screentshots section*/
-
 #problem-solution-section{
     display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: left;
-}
-
+  text-align: left;}
 #problem-solution-section img{
-
-    width: 25rem;
+width: 25rem;
     height: 20rem;
     padding: 1rem;
-    margin: 1rem;
-}
-
-/*Thank you section*/
-
+    margin: 1rem;}
+    /*Thank you section*/
 #thank-you-section{
     display: flex;
   flex-direction: column;
   align-items: center;
   text-align: left;
   font-size: 1.5rem;
-  margin: 1rem;
-}
-
+  margin: 1rem;}
 /*Footer*/
-
 footer{
     display: flex;
     justify-content: space-around;
@@ -211,20 +141,13 @@ footer{
     font-family: lato, sans-serif;
     font-size: 1rem;
     padding: 1rem;
-    margin: 1rem 0 0 0;
-}
-
+    margin: 1rem 0 0 0;}
 .palabra{
-    color:#F2B886;
-}
-
+    color:#F2B886;}
 footer p{
-    margin: 1rem 2rem 0 0;
-}
-
+    margin: 1rem 2rem 0 0;}
 a.button{
     position: relative;
-    
     /*Esconde cualquier contenido que salga fuera del botón */
     /* ... tus otros estilos ... */ 
     display: block; /* Hace que el botón sea un bloque */
@@ -240,128 +163,67 @@ a.button{
     text-decoration: none;
     color: #F2B886;
     font-family: lato, sans-serif;
-    font-weight: 600;
-    
-}
-
+    font-weight: 600;}
 a.button:hover{ /*Al momento de hacer hover hace sombra alrededor*/
     box-shadow: 0 0 .5rem cyan,
     0 0 2rem cyan, 0 0 2.5rem #700EF0,
-    0 0 3rem #700EF0, 0 0 4rem #700EF0;
-}
-
-
+    0 0 3rem #700EF0, 0 0 4rem #700EF0;}
 /*Responsive design*/
-
 @media only screen and (max-width: 768px){
-    
     h1{
-        font-size: 1.5rem;
-    }
-
-
-    h2, h3, h4, h5, p{
-        font-size: 1rem;
-    }
-    
+        font-size: 1.5rem;}
+ h2, h3, h4, h5, p{
+        font-size: 1rem;}
     header {
       height: 30vh;
-      padding: 2rem;
-    }
-  
-    .rectangles {
-      flex-direction: column;
-      
-    }
-  
-    .rectangle-wrap img{
+      padding: 2rem;}
+   .rectangles {
+      flex-direction: column; }
+  .rectangle-wrap img{
         width: 8rem;
-        height: 8rem;
-        
-    }
-    
+        height: 8rem;}
     .rectangle-wrap{
-        margin: 1rem;
-    }
-    
+        margin: 1rem;}
     .rectangle-wrap h5{
-        margin: .625rem;
-    }
-
-    .img-examples,
+        margin: .625rem;}
+.img-examples,
     .font-wrap,
     .img-to-show {
       flex-direction: column;
       gap: 1rem;
-      align-items: center;
-    }
-  
-    .img-examples img{
-        width: 80%;
-    }
-
-
-      .img-it-wrap{
-        align-items: center;
-      }
-
-    .img-it-wrap img {
+      align-items: center;}
+   .img-examples img{
+        width: 80%;}
+ .img-it-wrap{
+        align-items: center;}
+.img-it-wrap img {
       width: 80%;
-      height: auto;
-      
-      
-      
-    }
-  
-     .arrow{
-        display: none;
-     }
-
-     #problem-solution-section{
-        padding: 1rem;
-     }
-
-
-
-    #result-section img,
+      height: auto;}
+  .arrow{
+        display: none;}
+#problem-solution-section{
+        padding: 1rem;}
+#result-section img,
     #problem-solution-section img {
       width: 80%;
-      height: auto;
-      
-    }
-  
-    a.button {
+      height: auto;}
+  a.button {
       width: 60%;
-      padding: 0.5rem;
-    }
-  
-    footer {
+      padding: 0.5rem;}
+   footer {
       flex-direction: column;
       align-items: center;
-      text-align: center;
-    }
-  
-    footer p {
-      margin: 1rem;
-    }
-  
-    #development-section p {
+      text-align: center;}
+  footer p {
+      margin: 1rem;}
+  #development-section p {
       margin: 0;
-      padding-left: 0;
-    }
-  
-    #back a img{
-     width: 1.3rem;    }
-
-     #back a span{
-    display: none;
-     }
-
-    #back{
+      padding-left: 0;}
+  #back a img{
+     width: 1.3rem;}
+ #back a span{
+    display: none;}
+#back{
         top: .625rem;
-        left: .625rem;
-    }
-
-
-}
+        left: .625rem;}}
   
