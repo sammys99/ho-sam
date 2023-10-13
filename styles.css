@@ -865,7 +865,9 @@ footer {
 .footer-left {
     order: 1; /* Esto lo mantiene al principio */
 }
-
+.footer-right a{
+    font-size: 0.8rem;
+}
 .footer-right {
     order: 2; /* Esto lo coloca después de .footer-left */
 }
