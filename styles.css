@@ -496,6 +496,7 @@ input{
     transition: background-color 0.3s; /* Agrega una transición suave al cambiar el color de fondo */
     font-family: lato, sans-serif;
     font-weight: 600;
+    color: black;
     z-index: 1; /*Aqui el texto permanecera arriba*/
 }
 
